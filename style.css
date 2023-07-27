@@ -1,0 +1,282 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+/* Function */
+:root {
+    --main-color: #F39601;
+    --text: #555;
+    --title-text: #4F4F6F;
+    --colorOri: #326EBD;
+    --light-text: #777777bb;
+    --normal-text: #2F2F33;
+    --head-title: 35px;
+    --text-size: 16px;
+    --title: 25px;
+    --title-phonesize: 18px;
+    --bg: #ffffff;
+    --defualt-fontsize: 14px;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --main-font: 'raleway';
+    --space-top: 80px;
+    --fontletter: 'Poppins', sans-serif;
+}
+.header
+{
+    background-color: var(--colorOri);
+    padding: 35px 35px 85px 35px;
+    font-size: var(--text-size);
+    text-align: center;
+    color: var(--bg);
+    max-width: min(1980px, 100%);
+    margin: 0%;
+}
+.header h1
+{
+    font-weight: bold;
+}
+/* ------------------------Service Section---------------------------- */
+
+.service
+{
+    padding: 90px 40px;
+    display: flex;
+    justify-content: space-around;
+    max-width: min(1980px, 100%);
+    margin-inline: auto;
+    color: var(--text);
+
+}
+.service .Image-Service
+{
+  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.service .Service-Detail
+{
+    padding: 35px;
+    line-height: 45px;
+}
+.service .Service-Detail h2
+{
+    font-weight: normal;
+    font-size: var(--title);
+    font-family: var(--fontletter);
+}
+.service .Service-Detail h1
+{
+    font-size: var(--head-title);
+    font-weight: bold;
+    color: var(--normal-text);
+}
+.service .Service-Detail p
+{
+   line-height: 23px;
+}
+.service .Service-Detail h3
+{
+    font-weight: bold;
+    font-size: var(--title);
+    color: var(--normal-text);
+    padding: 20px 0px 20px 0px;
+}
+
+/*---------------------Second Service Section----------------------------*/
+
+.service-second
+{
+    padding: 90px 40px;
+    display: flex;
+    background-color: var(--colorOri);
+    justify-content: space-around;
+    max-width: min(1980px, 100%);
+    margin-inline: auto;
+
+}
+
+.service-second .Service-Detail
+{
+    padding: 35px;
+    color: var(--bg);
+    line-height: 45px;
+    width: 100%;
+
+}
+.service-second .Image-Service
+{
+  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.service-second .Service-Detail h2
+{
+    font-weight: normal;
+    font-size: var(--title);
+}
+.service-second .Service-Detail h1
+{
+    font-size: var(--head-title);
+    font-weight: bold;
+}
+
+.service-second  .Service-Detail h3{
+
+    font-size: var(--title);
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+}
+.service-second .Service-Detail p
+{
+   line-height: 23px;
+}
+
+@media (max-width:1240px)
+{
+    .navbar .logo img
+    {
+        width: 400px;
+    }
+}
+@media (max-width:1150px)
+{
+    .navbar .logo img
+    {
+        width: 350px;
+    }
+    .service
+    {
+        padding: 50px 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service .Service-Detail
+    {
+        padding-top: 80px;
+    }
+    .service .Service-Detail h1
+    {
+        line-height: 75px;
+    }
+    .service-second
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .service-second .Service-Detail
+    {
+        padding-top: 80px;
+    }
+    .service-second .Service-Detail h1
+    {
+        
+        line-height: 75px;
+    }
+}
+
+@media (max-width:780px)
+{
+    .navbar .logo img
+    {
+        width: 300px;
+    }
+    .header h1
+    {
+        font-size: var(--head-title);
+    }
+    .service .Image-Service img
+    {
+        width: 300px;
+    }
+    .service .Service-Detail h1 
+    {
+        font-size: var(--title);
+    }
+    .service .Service-Detail h2 , .service .Service-Detail h3
+    {
+        font-size: var(--text-size);
+    }
+    .service .Service-Detail p 
+    {
+        font-size: var(--defualt-fontsize);
+    }
+    /* Second Service */
+    .service-second .Image-Service img
+    {
+        width: 300px;
+    }
+    .service-second .Service-Detail h1 
+    {
+        font-size: var(--title);
+    }
+    .service-second .Service-Detail h2 , .service .Service-Detail h3
+    {
+        font-size: var(--text-size);
+    }
+    .service-second .Service-Detail p 
+    {
+        font-size: var(--defualt-fontsize);
+    }
+}
+@media (max-width:670px)
+{
+    .service
+    {
+        padding:50px;
+        display: flex;
+    }
+    .service .Service-Detail
+    {
+        padding:50px 0px;
+    }
+    .service-second
+    {
+        padding:50px;
+        display: flex;
+    }
+    .service-second  .Service-Detail
+    {
+        padding:50px 0px;
+    }
+}
+@media (max-width:420px)
+{
+    .service
+    {
+        padding:30px;
+        display: flex;
+    }
+    .service .Image-Service img
+    {
+        width: 250px;
+    }
+    .service .Service-Detail
+    {
+        padding:30px 0px;
+    }
+    .service-second
+    {
+        padding:30px;
+        display: flex;
+    }
+    .service-second .Image-Service img
+    {
+        width: 250px;
+    }
+    .service-second  .Service-Detail
+    {
+        padding:30px 0px;
+    }
+}

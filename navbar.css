@@ -1,0 +1,145 @@
+/* Function */
+:root {
+    --main-color: #F39601;
+    --text: #555;
+    --title-text: #4F4F6F;
+    --colorOri: #326EBD;
+    --light-text: #777777bb;
+    --normal-text: #2F2F33;
+    --head-title: 35px;
+    --text-size: 16px;
+    --title: 25px;
+    --title-phonesize: 18px;
+    --bg: #ffffff;
+    --defualt-fontsize: 14px;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --main-font: 'raleway';
+    --space-top: 80px;
+    --fontletter: 'Poppins', sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    background-color: var(--colorOri);
+    max-width: min(1980px, 100%);
+    margin: 0% !important;
+    border-radius: 0% !important;
+
+}
+.navbar .logo img
+{
+    width: 350px;
+    cursor: pointer;
+}
+.nav ul li
+{
+    display: inline-block;
+    padding: 35px;
+}
+.nav ul li a
+{
+    text-decoration: none;
+    color: var(--bg);
+    font-weight: bold;
+    font-size: var(--defualt-fontsize);
+}
+
+.nav ul li:nth-child(4) a
+{
+    color: var(--colorOri);
+    background-color: var(--bg);
+    padding: 10px 35px;
+    border-radius: 35px;
+}
+
+#menu-btn{
+    cursor: pointer;
+    font-size: var(--defualt-fontsize);
+    padding:1rem 1.3rem;
+    border-radius: .5rem;
+    color: var(--colorOri);
+    background: var(--bg);
+    display: none;
+
+}
+
+
+
+@media (max-width:1240px)
+{
+    #menu-btn 
+    {
+        margin-left: 40px;
+        display: initial;
+    }
+    .navbar .nav
+    {
+        position: absolute;
+        top: 15%;
+        right: 7%;
+        color: var(--colorOri);
+        background-color: var(--bg);
+        box-shadow: var(--box-shadow);
+        width: 15rem;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        transform-origin: top right;
+        transform: scale(0);
+
+    }
+    .nav.active
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .nav ul li
+    {
+        padding: 30px 20px;
+        text-align: center;
+        display: block;
+    }
+    .navbar .nav a
+    {
+        color: var(--colorOri);
+    }
+    .nav ul li:nth-child(4)
+    {
+        text-align: center;
+    }
+    .nav ul li:nth-child(4) a
+    {  
+        color: var(--bg);
+        background-color: var(--colorOri);
+        padding: 15px 35px;
+        border-radius: 35px;
+    }
+    .navbar .nav a:hover{
+        width: 100%;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: var(--colorOri);
+        border-radius: 0.5rem;
+    }
+
+}
+@media (max-width:780px)
+{
+    #menu-btn{
+
+        padding:12px 15px;
+
+    
+    }
+}
+@media (max-width:420px)
+{
+    .navbar
+    {
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,518 @@
+*{
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --main-color: #F39601;
+    --text: #555;
+    --title-text: #4F4F6F;
+    --colorOri: #326EBD;
+    --light-text: #777777bb;
+    --normal-text: #000000;
+    --head-title: 35px;
+    --text-size: 16px;
+    --title: 25px;
+    --title-phonesize: 18px;
+    --bg: #ffffff;
+    --defualt-fontsize: 14px;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --main-font: 'raleway';
+    --space-top: 80px;
+    --fontletter: 'Poppins', sans-serif;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 130px 40px 120px;
+}
+.wrapper-left
+{
+    display: flex;
+}
+.wrapper-right
+{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 300px;
+    cursor: pointer;
+}
+.CM-List
+{
+    float: right;
+}
+.CM-List li
+{
+    list-style: none;
+    display: inline-block;
+}
+.CM-List li a{
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 5px 1.5em;
+    color: var(--main-color);
+}
+.CM-List li:last-child a{
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    color: #ffffff;
+    border-radius: 1.5em;
+    font-weight: normal;
+}
+.CM-List li:hover a{
+    color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    background: var(--main-color);
+    border-radius: 1.5em;
+}
+#menu-btn{
+  cursor: pointer;
+  font-size: 2em;
+  color: var(--colorOri);
+  background: var(--bg);
+  display: none;
+}
+.HomeTop
+{
+    padding: 35px 130px 40px 120px;
+}
+.HomeTop-top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.HomeTop-top-left
+{
+    padding: 60px 0px 0px 50px;
+    width: 45%;
+}
+.HomeTop-top-left h1
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: var(--fontletter);
+    font-size: var(--head-title);
+    color: var(--colorOri);
+    font-weight: normal;
+}
+.HomeTop-top-left p
+{
+    padding-bottom: 20px;
+    margin: 0px;
+    font-family: var(--fontletter);
+    font-size: 13px;
+    color: var(--colorOri);
+    font-weight: normal;
+}
+.HomeTop-top-left .line
+{
+    display: flex;
+}
+.HomeTop-top-left .line p
+{
+    margin: 0px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    justify-content: center;
+    font-family: var(--fontletter);
+    font-size: var(--defualt-fontsize);
+    color: var(--colorOri);
+    font-weight: normal;
+}
+.HomeTop-top-left button
+{
+    cursor: pointer;
+    background: var(--main-color);
+    border-radius: 60px;
+    border: #ffffff;
+    box-shadow: var(--main-color) 0px 4px 12px;
+    color: var(--bg);
+    padding: 13px;
+    font-weight: bold;
+    width: 150px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+
+}
+/* line */
+.HomeTop-top-left .HomeTop-line
+{
+  height: 5px;
+  width: 150px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(50,110,189,1) 100%);  
+  position:relative;
+  border-radius: 2px;
+  margin: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.HomeTop-top-right img
+{
+    height: 400px;
+}
+.HomeTop-buttom
+{
+    display: flex;
+    justify-content: space-between;
+}
+.HomeTop-buttom .HomeTop-buttom-left img
+{
+    width: 550px;
+}
+.HomeTop-buttom .HomeTop-buttom-right 
+{
+    width: 50%;
+    padding-top: 30px;
+    padding-right: 110px;
+    flex-wrap: wrap;
+}
+.HomeTop-buttom .HomeTop-buttom-right p
+{
+    color: var(--text);
+    font-family: var(--fontletter);
+    font-size: var(--defualt-fontsize);
+    margin: 0px;
+    padding-top: 20px;
+}
+.HomeTop-buttom .HomeTop-buttom-right h1
+{
+    font-size: var(--head-title);
+    font-family: var(--fontletter);
+    color: #000000;
+    margin: 0px;
+    padding: 30px 0px 15px 0px;
+
+}
+.HomeMiddle 
+{
+    padding: 35px 130px 40px 120px;
+}
+.HomeMiddle .HomeMiddle-top
+{
+    padding-bottom: 100px;
+    display: flex;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-left
+{
+    padding: 0px 50px 0px 50px;
+    width: 50%;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-left-point
+{
+    display: flex;
+    padding: 20px 0px 20px 0px;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-left-point .HomeMiddle-top-left-point-left
+{
+    width: 50%;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-left-point .HomeMiddle-top-left-point-left .HomeMiddle-top-left-point-left-mini
+{
+    display: flex;
+    padding-top: 20px;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-left-point .HomeMiddle-top-left-point-left .HomeMiddle-top-left-point-left-mini p
+{
+    padding: 0px 0px 0px 20px;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-left button
+{
+    cursor: pointer;
+    background: var(--main-color);
+    border-radius: 8px;
+    border: #ffffff;
+    color: var(--bg);
+    padding: 15px;
+    font-weight: bold;
+    width: 150px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right
+{
+    width: 50%;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini
+{
+    display: flex;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-normal
+{
+    padding: 25px;
+    background-color: var(--bg);
+    border-radius: 10px;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-color
+{
+    padding: 25px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-normal i
+{
+    font-size: 24px;
+    color: var(--normal-text);
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-color i
+{
+    font-size: 24px;
+    color: var(--bg);
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-normal h3
+{
+    font-size: var(--text-size);
+    color: var(--normal-text);
+    font-family: var(--fontletter);
+    font-weight: bold;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-color h3
+{
+    font-size: var(--text-size);
+    color: var(--bg);
+    font-family: var(--fontletter);
+    font-weight: bold;
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-normal p
+{
+    font-size: var(--defualt-fontsize);
+    color: var(--text);
+    font-family: var(--fontletter);
+}
+.HomeMiddle .HomeMiddle-top .HomeMiddle-top-right .HomeMiddle-top-right-mini .HomeMiddle-top-right-mini-color p
+{
+    font-size: var(--defualt-fontsize);
+    color: var(--bg);
+    font-family: var(--fontletter);
+}
+.HomeMiddle-top-left p
+{
+    font-size: var(--defualt-fontsize);
+    color: var(--text);
+    font-family: var(--fontletter);
+    padding-top: 30px;
+    margin: 0px;
+}
+.HomeMiddle-top-left h3
+{
+    font-size: var(--head-title);
+    color: var(--normal-text);
+    font-family: var(--fontletter);
+    margin: 0px;
+    padding-top: 20px;
+}
+
+.HomeMiddle .HomeMiddle-buttom
+{
+    display: flex;
+    justify-content: space-between;
+}
+.HomeMiddle .HomeMiddle-buttom-left
+{
+    padding: 0px 50px 0px 50px;
+}
+.HomeMiddle .HomeMiddle-buttom-left h1
+{
+    font-size: var(--head-title);
+    color: var(--normal-text);
+    font-family: var(--fontletter);
+    margin: 0px;
+}
+.HomeMiddle .HomeMiddle-buttom-left p
+{
+    font-size: var(--defualt-fontsize);
+    color: var(--text);
+    font-family: var(--fontletter);
+    padding-top: 30px;
+    margin: 0px;
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini
+{
+    padding-top: 30px;
+    margin: 0px;
+    display: flex;
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-leftmini
+{
+    width: 50%;
+    padding: 0px 25px 0px 0px;
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-leftmini i
+{
+    font-size: 20px;
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-leftmini h3
+{
+    font-size: var(--text-size);
+    color: var(--normal-text);
+    font-family: var(--fontletter);
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-leftmini p
+{
+    font-size: var(--defualt-fontsize);
+    color: var(--text);
+    font-family: var(--fontletter);
+    padding-top: 20px;
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-righttmini
+{
+    width: 50%;
+    /* padding: 0px 0px 0px 25px; */
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-rightmini i
+{
+    font-size: 20px;
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-rightmini h3
+{
+    font-size: var(--text-size);
+    color: var(--normal-text);
+    font-family: var(--fontletter);
+}
+.HomeMiddle .HomeMiddle-buttom-left .HomeMiddle-buttom-left-mini .HomeMiddle-buttom-left-rightmini p
+{
+    font-size: var(--defualt-fontsize);
+    color: var(--text);
+    font-family: var(--fontletter);
+    padding-top: 20px;
+}
+.HomeMiddle .HomeMiddle-buttom-right img
+{
+    height: 400px;
+}
+
+/* teamwork */
+.teamwork p
+{
+    font-family: var(--fontletter);
+    text-align: center;
+    color: var(--light-text);
+    font-size: var(--light-text);
+    letter-spacing: 3px;
+    padding-top: 15px;
+}
+.teamwork h1
+{
+    letter-spacing: 2px;
+    font-weight: 600px;
+    text-align: center;
+    font-size: var(--head-title);
+    color: #000000;
+    font-family: var(--fontletter);
+    padding: 20px;
+    margin: 0%;
+}
+/* line */
+.teamwork-line
+{
+  height: 3px;
+  width: 100px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(50,110,189,1) 100%);  
+  position:relative;
+  margin: auto;
+  border-radius: 2px;
+}
+.teamwork-top
+{
+    margin: auto;
+    width: 100%;
+   
+}
+.teamwork-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 250px;
+    justify-content: center ;
+}
+.teamwork-box .box 
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 250px;
+  margin: 10px;
+  border-radius: 25px;
+}
+.teamwork-box .box p{
+    margin-top: 0px;
+    font-family: var(--fontletter);
+    font-size: var(--defualt-fontsize);
+    letter-spacing: normal;
+}
+.box:hover 
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.teamwork-box .box img 
+{
+  padding: 20px;
+}
+.name h4
+{
+  font-family: var(--fontletter);
+  font-size: 18px;
+  text-align: center;
+}
+.social
+{
+  margin-bottom: 10px;
+}
+.social i
+{
+  padding: 5px;
+}
+.teamwork .teamwork-mini
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 250px 40px 250px;
+}
+.teamwork .teamwork-mini .mini-left
+{
+    /* display: flex; */
+    width: 50%;
+    margin: 0px;
+    padding: 110px 0px 0px 100px;
+}
+.teamwork .teamwork-mini .mini-left h1
+{
+    text-align: left;
+    font-size: var(--head-title);
+    padding: 0px;
+}
+.teamwork .teamwork-mini .mini-left p
+{
+    text-align: left;
+    font-size: var(--defualt-fontsize);
+    padding: 30px 0px 30px 0px;
+    margin: 0px;
+    letter-spacing: 1px;    
+}
+.teamwork .teamwork-mini .mini-left button
+{
+    cursor: pointer;
+    background: var(--colorOri);
+    border-radius: 8px;
+    border: #ffffff;
+    color: var(--bg);
+    padding: 15px;
+    font-weight: bold;
+    width: 150px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+
+}
+.teamwork .teamwork-mini .mini-right img
+{
+    height: 350px;
+}
